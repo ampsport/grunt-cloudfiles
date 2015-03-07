@@ -117,6 +117,8 @@ module.exports = function(grunt) {
 
     var ufile = fileName;
     headers = headers || {};
+    headers['Access-Control-Allow-Origin'] = 'https://preview.ampsport.com';
+
 
     if (strip !== undefined) {
       ufile = stripComponents(ufile, strip);
